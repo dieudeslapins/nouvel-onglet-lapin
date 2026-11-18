@@ -143,7 +143,7 @@ git remote add origin https://github.com/TON-PSEUDO/nouvel-onglet-lapin.git
 git push -u origin main
 ```
 
-> ⚠️ Avant de publier, vérifie qu'aucune donnée personnelle ne traîne dans le dossier. Les fichiers `.bat` contiennent un chemin Python propre à ta machine : ils retombent automatiquement sur `python` si ce chemin n'existe pas, donc le projet reste utilisable ailleurs.
+> 💡 Les scripts `.bat` et `.ps1` **détectent Python automatiquement** (lanceur `py`, `python` du PATH, installations classiques) : aucun chemin personnel n'est codé en dur, le projet fonctionne tel quel sur n'importe quel PC.
 
 ---
 

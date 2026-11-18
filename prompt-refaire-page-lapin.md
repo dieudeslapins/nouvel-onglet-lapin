@@ -1,6 +1,6 @@
 # Prompt à donner à une IA : refaire la page « Nouvel onglet · Lapin »
 
-> **Emplacement du projet** : tout est regroupé dans le dossier `nouvel-onglet-lapin\` de `C:\Users\Eleve\Documents\Projet par défaut\` — page (`nouvel-onglet-lapin.html`), serveur (`serveur_lapin.py`), scripts de lancement/autostart, cette spec et `a-savoir-brixhub.txt`. Les autres éléments de `Projet par défaut` (scanner souris, mullvad…) n'appartiennent pas à ce projet.
+> **Emplacement du projet** : tout est regroupé dans le dossier `nouvel-onglet-lapin\` — page (`nouvel-onglet-lapin.html`), serveur (`serveur_lapin.py`), scripts de lancement/autostart, cette spec et `a-savoir-brixhub.txt`. Le projet est autonome : il peut être placé n'importe où sur le disque.
 
 Copie tout ce qui suit dans une IA (Claude, ChatGPT, etc.). Le résultat attendu est une page de nouvel onglet Firefox, locale, mignonne et fonctionnelle.
 
