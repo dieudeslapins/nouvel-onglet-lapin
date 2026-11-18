@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Fichiers système
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Logs et temporaires
+*.log
+*.tmp
+*.pid
+
+# Captures perso (optionnel — retire ces lignes si tu veux publier tes images)
+# docs/apercu.png

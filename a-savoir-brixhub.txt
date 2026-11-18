@@ -1,0 +1,91 @@
+À SAVOIR — BrixHub affiché dans la page
+=======================================
+
+POURQUOI ÇA BLOQUAIT
+--------------------
+BrixHub envoie un en-tête de sécurité « X-Frame-Options ».
+C'est le navigateur (Firefox) lui-même qui refuse d'afficher le site
+dans une autre page. Aucun code de la page lapin ne peut contourner ça
+(confirmé sur MDN et Stack Overflow).
+
+LA SOLUTION : UNE EXTENSION FIREFOX
+-----------------------------------
+Installer une fois cette extension :
+  • Ignore X-Frame-Options Header (par ThomazPom)
+    https://addons.mozilla.org/fr/firefox/addon/ignore-x-frame-options-header/
+
+Ensuite : recharger la page lapin (Ctrl+R), puis appuyer sur H ou cliquer
+sur 🕵️ dans le dock : BrixHub s'affiche directement dans la page.
+
+AUTRES EXTENSIONS TROUVÉES (de secours)
+---------------------------------------
+  • Remove X-Frame-Options Header (par Callaghan)
+    https://addons.mozilla.org/en-US/firefox/addon/remove-x-frame-options-header/
+  • Allow SSO iFrames (par chaptergy) — plutôt pour les développeurs
+    https://addons.mozilla.org/firefox/addon/allow-sso-iframes/
+
+POURQUOI L'E-MAIL NE SE REMPLIT PAS TOUT SEUL
+---------------------------------------------
+- Le site est affiché dans un cadre séparé par le navigateur : la page
+  lapin n'a pas le droit d'écrire dans ses champs (protection
+  « same-origin »). Aucune page ne peut remplir les champs d'un autre.
+- Le captcha du site sert justement à bloquer les robots : il se
+  résout à la main, il n'existe pas de contournement légitime.
+- L'automatique déjà en place : l'e-mail est copié tout seul, il ne
+  reste qu'à faire Ctrl+V dans le champ Email, après le captcha.
+- La recherche par nom ou prénom reste manuelle : on ne l'automatise
+  pas (risque d'usurpation et de harcèlement).
+
+BON À SAVOIR
+------------
+- Un appui sur H (ou 🕵️ dans le volet de gauche : touche le bord
+  gauche de l'écran et le volet glisse — ou clique la patte 🐾 ; ou
+  le raccourci BrixHub de la grille du milieu) affiche le site dans
+  la grande fenêtre verticale de la gauche. Échap, H ou ✕ referment
+  tout en un coup.
+- Le bouton ⛶ de la barre du cadre passe en GRAND ÉCRAN (toute la
+  fenêtre) ; Échap en sort d'abord, puis referme le cadre si on
+  rappuie.
+- Le champ e-mail et « Copier » se trouvent dans la barre du haut du
+  cadre. « Dans un onglet ↗ » ouvre un onglet séparé (et copie
+  l'e-mail si tu l'as saisi).
+- Sans extension, le cadre affiche le message de sécurité de Firefox ;
+  le bouton « Dans un onglet ↗ » fonctionne toujours, extension ou pas.
+- L'extension retire le blocage pour TOUS les sites du navigateur :
+  on peut la désactiver quand on ne s'en sert pas, ou la limiter à
+  brixhub.to grâce à la liste blanche dans ses options.
+- La recherche automatique par nom ou prénom n'est pas proposée
+  (risque d'usurpation et de harcèlement) : chacun tape lui-même
+  ce qu'il cherche dans le site. La page lapin ne stocke rien.
+
+DISCORD : MÊME PRINCIPE
+-----------------------
+- Discord envoie la même protection « X-Frame-Options » : c'est la
+  MÊME extension « Ignore X-Frame-Options » qui débloque l'affichage
+  intégré (rien de plus à installer).
+- Un appui sur D (ou 🎮 dans le volet de gauche, même volet que
+  BrixHub, ou la tuile 💬 Discord de la grille du milieu) affiche
+  Discord dans la grande fenêtre verticale de la gauche, à la place
+  de BrixHub (ouvrir l'un referme l'autre).
+  Échap, D ou ✕ referment tout en un coup.
+- Le bouton ⛶ de la barre passe en GRAND ÉCRAN ; Échap en sort
+  d'abord, puis referme le cadre si on rappuie.
+- « Dans un onglet ↗ » ouvre discord.com dans un onglet séparé, ça
+  marche toujours sans extension.
+- La connexion à Discord se fait à la main dans le cadre (comme tout
+  site connecté), et la page lapin ne stocke rien.
+
+SITES PERSONNALISÉS : LE BOUTON ✏️ « MODIFIER » DU VOLET
+--------------------------------------------------------
+- Dans le volet de gauche, sous BrixHub et Discord, le bouton ✏️
+  « Modifier » ouvre un petit éditeur (le même que celui des
+  raccourcis) : une ligne par site, avec Nom et Adresse.
+- « ＋ Ajouter » crée une ligne ; l'adresse s'écrit simplement
+  (ex. wikipedia.org — le https:// s'ajoute tout seul, une adresse
+  invalide est soulignée en rouge puis ignorée).
+- Les flèches ↑ ↓ changent l'ordre, ✕ supprime la ligne.
+- « Terminé » (ou Échap) enregistre : les sites apparaissent alors
+  comme des boutons 🔗 dans le volet et s'ouvrent dans la même grande
+  fenêtre que BrixHub/Discord (ouvrir l'un referme l'autre). Échap, ⛶
+  et « Dans un onglet ↗ » marchent pareil.
+- Les sites restent d'une session à l'autre (jusqu'à 6).
